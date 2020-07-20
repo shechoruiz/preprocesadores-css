@@ -1,0 +1,7 @@
+#Archivos a omitir
+guia-de-codigo-platzi-games.pdf
+pug/images/
+less/css/
+less/html/
+less/images/
+less/pug/
