@@ -1,0 +1,14 @@
+extend componentes/plantilla.pug
+block contenidos
+        section.intro
+            div.intro__imagen: img(src="images/imagen.png", alt="Imagen de prueba")
+            //- Si el elemento tuviera un unico elemento hijo se puede declarar, como esta en la linea anterior, respetando los 2 puntos. Esto se puede omitir colocando los elementos de manera normal respetando su identación
+            .intro__contenido
+                h2 #{titulo}
+                p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quidem modi sed, aperiam illo suscipit amet omnis eligendi. Accusantium soluta commodi aut qui totam eveniet perspiciatis iure. Hic, iusto totam?
+                    span Lorem ipsum dolor, sit amet consectetur adipisicing.
+                a.boton Leer más
+        main.contenido
+            each titulo in subtitulos
+                +caja("imagen.png", titulo, "Lorem ipsum, dolor sit amet consectetur adipisicing")
