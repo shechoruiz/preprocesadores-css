@@ -1,0 +1,32 @@
+@color-primario: #333;
+@color-claro: #FFF;
+@color-secundario: #8841DA;
+@color-variacion: #012179;
+@Fuente1: 'Lato', sans-serif;
+@Fuente2: 'Oswald', sans-serif;
+@Fuente-base: 18px;
+
+.sombra-caja{
+	box-shadow: 0px 5px 15px 0 fade(@color-primario,10%);
+}
+
+.Oswald{
+	font-family: @Fuente2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: @Fuente1;
+	color: @color-primario;
+	line-height: (@Fuente-base) + 10%;
+}
+
+h1,h2,h3 {
+	margin: 0;
+	.Oswald;
+}
